@@ -8,4 +8,4 @@ add = st.button("Add")
 sub = st.button("Subtract")
 
 if add:
-    print("Answer =",(num1 + num2))
+    st.markdown("Answer =",(num1 + num2))
