@@ -2,10 +2,10 @@ import streamlit as st
 
 st.title("Hello")
 
-data1 = st.text_input("Enter your name : ")
-classdata = st.selectbox("Enter your class :",(1,2,3,4,5,6,7,8,9,10,11,12))
-button = st.button("Done")
+num1 = st.number_input("Enter first no. : ")
+num2 = st.number_input("Enter second no. : ")
+add = st.button("Add")
+sub = st.button("Subtract")
 
-if button:
-    st.markdown("Your name is",data1)
-    st.markdown("You study in class",classdata)
+if add:
+    print("Answer =",(num1 + num2))
